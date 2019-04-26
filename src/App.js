@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./Header";
+import Login from "./Login";
+import TransactionInfo from "./TransactionInfo";
+import TransactionView from "./TransactionView";
+import Devices from "./Devices";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="ui container">
+      <Header />
+      <div className="ui grid">
+        <div className="eight wide column">
+          <Login />
+          <TransactionInfo />
+          <Devices />
+        </div>
+
+        <div className="eight wide column">
+          <TransactionView />
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
