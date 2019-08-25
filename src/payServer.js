@@ -1,5 +1,5 @@
 const uuidv4 = require("uuid/v4");
-const secretKey = "BPuVLPY3rZRxfpkysGWwA8b6ZJxJ3uNn";
+const secretKey = "xxxxxxxxxxxxxxxxx";
 
 let devices = [];
 
